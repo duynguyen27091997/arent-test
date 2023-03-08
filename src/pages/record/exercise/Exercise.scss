@@ -1,0 +1,29 @@
+.scroll-wrap{
+    /* Firefox */
+& {
+    scrollbar-width: thin;
+    scrollbar-color: #FFCC21;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #777777;
+    border-radius: 20px;
+
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #FFCC21;
+    border-radius: 20px;
+  }
+  
+  & {
+    padding-right: 25px;
+    max-height: 192px;
+    overflow-y: scroll;
+  }
+}
